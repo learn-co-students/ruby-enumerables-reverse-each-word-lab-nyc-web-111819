@@ -1,8 +1,3 @@
-def reverse_each_word(:string)
-  result = []
-  array = %w[:st]
-  
-  array.each {|n| n.reverse}
-  result = array.join(' ')
-  return result
+def reverse_each_word(sentence)
+  sentence.split.collect {|word| word.reverse}.join(" ")
 end 
